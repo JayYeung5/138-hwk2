@@ -2,7 +2,6 @@ alphabet: {0, 1}
 start: q0
 accepting: {q2}
 q0 (_, _ -> $, q1)
-q1 (0, $ -> xx$, q1)
-q1 (0, xx -> xxx, q1)
-q1 (1, x -> _, q1) 
+q1 (0, _ -> 00, q1)
+q1 (1, 0 -> _, q1) 
 q1 (_, $ -> _, q2)

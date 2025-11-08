@@ -1,4 +1,4 @@
-alphabet: {a, b, A, B, Y, X, Z}
+alphabet: {a, b}
 start: q0
 accepting: {q2}
 q0 (_, _ -> S$, q1)

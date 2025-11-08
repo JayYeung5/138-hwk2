@@ -1,17 +1,12 @@
 alphabet: {0, 1}
 start: q0
 accepting: {q4}
-
 q0 _, _ -> q1 $
-
 q1 0, _ -> q2 X
 q1 1, _ -> q1 X
-
 q2 0, _ -> q2 X
 q2 1, _ -> q2 X
 q2 _, _ -> q3 _
-
 q3 0, X -> q3 _
 q3 1, X -> q3 _
-
 q3 _, $ -> q4 _

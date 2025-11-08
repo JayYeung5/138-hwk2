@@ -1,30 +1,30 @@
 alphabet: {a, b}
 start: q0
 accepting: {q2}
-q0 ε, ε -> q1 S$
+q0 _, _ -> q1 S$
 
-q1 ε, S -> q1 A X
-q1 ε, S -> q1 Y B
-q1 ε, S -> q1 Z b Z a Z
+q1 _, S -> q1 A X
+q1 _, S -> q1 Y B
+q1 _, S -> q1 Z b Z a Z
 
-q1 ε, A -> q1 a A
-q1 ε, A -> q1 ε
+q1 _, A -> q1 a A
+q1 _, A -> q1 _
 
-q1 ε, B -> b B
-q1 ε, B -> ε
+q1 _, B -> b B
+q1 _, B -> _
 
-q1 ε, X -> q1 a
-q1 ε, X -> q1 a X b
+q1 _, X -> q1 a
+q1 _, X -> q1 a X b
 
-q1 ε, Y -> q1 b
-q1 ε, Y -> q1 a Y b
+q1 _, Y -> q1 b
+q1 _, Y -> q1 a Y b
 
-q1 ε, Z -> q1 a Z
-q1 ε, Z -> q1 b Z
-q1 ε, Z -> q1 ε
+q1 _, Z -> q1 a Z
+q1 _, Z -> q1 b Z
+q1 _, Z -> q1 _
 
-q1, a, a -> q1 ε
+q1, a, a -> q1 _
 
-a1, b, b -> q1 ε
+a1, b, b -> q1 _
 
-q1 ε, $ -> q2 ε
+q1 _, $ -> q2 _

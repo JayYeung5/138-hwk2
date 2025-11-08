@@ -1,0 +1,8 @@
+alphabet: {0, 1}
+start: q0
+accepting: {q4}
+
+q0 ε, ε -> q1 $
+q1 0, ε -> q1 XX
+q1 1, ε -> q1 ε
+q1 ε, $ -> q2 ε

@@ -1,5 +1,5 @@
 
-alphabet: {a, b}
+alphabet: {a, b, A, B, Y, X, Z}
 start: q0
 accepting: {q2}
 q0 (_, _ -> S$, q1)
